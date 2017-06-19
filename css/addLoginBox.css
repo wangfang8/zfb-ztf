@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/*####顶部栏  登陆栏 开始####*/
+
+/*####大盒子 开始###*/
+._box{
+    width: 286px;
+    height: 295px;
+    background-color: #06213d;
+    position: absolute;
+    right: 540px;
+    top: 200px;
+    z-index: 1000;
+    /*display: none;*/
+}
+/* ####左上角关闭按钮 开始#### */
+._box_close{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-decoration: none;
+	color: #9a9b9b;
+	position: relative;
+	top: 5px;
+	left: 15px;
+}
+._box_close:hover{
+	color: #fff;
+}
+/*####大盒子 结束###*/
+/*#### 大盒子内部第一个盒子 开始####*/
+._box1{
+    width: 220px;
+    height: 291px;
+    margin: 1px 30px;
+}
+._box1_title{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+._box1_user{
+    width: 220px;
+    height: 40px;
+    margin-top: 10px;
+}
+._box1_pass{
+    width: 220px;
+    height: 40px;
+    margin-top: 10px;
+}
+._box1_user_i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:url("../images/enterprise/head/user.png");
+}
+._box1_user input{
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    padding-left: 10px;
+}
+._box1_pass_i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:url("../images/enterprise/head/pass.png");
+}
+._box1_pass input{
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    padding-left: 10px;
+}
+._box1_for{
+    display: inline-block;
+    color:#fff;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+._box1_for:hover{
+    text-decoration: underline;
+}
+._box1_btn{
+    width: 220px;
+    height: 35px;
+    background-color: #00aaee;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+._box1_btn:hover{
+    background-color: #00a3d2;
+}
+._box1_foot{
+    width: 220px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+._box1_foot a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+}
+._box1_foot a:hover{
+    text-decoration: underline;
+}
+._box1_foot2{
+    margin-left: 10px;
+}
+._box1_foot ._box1_foot3{
+    color: #00a3d2;
+}
+/*#### 大盒子内部第一个盒子 结束####*/
+/*####右上角 二维码开始####*/
+._box ._box2 a{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/enterprise/head/ma.png")-201px -199px;
+}
+._box3{
+    width: 187px;
+    height: 258px;
+    padding: 20px 40px;
+    display: none;
+}
+._box3_box{
+    width: 187px;
+    height: 250px;
+    background: url("../images/enterprise/head/deng.png");
+}
+._box3_box i{
+    display: block;
+    width: 187px;
+    height: 250px;
+    background: url("../images/enterprise/head/deng.png");
+}
+/*####右上角 二维码结束####*/
+/*####顶部栏  登陆栏 结束####*/
+
+/*登录背景遮罩层样式开始*/
+.login-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index:600;
+}

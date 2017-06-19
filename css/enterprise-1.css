@@ -1,0 +1,383 @@
+@charset "UTF-8";
+.head_top_oneli,.head_top_twoli{
+    list-style: none;
+    display: block;
+    line-height: 50px;
+    font-family: 'microsoft yahei';
+}
+.head_top li a{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+}
+/*背景*/
+.head_bc{
+    width: 1349px;
+    height: 550px;
+    position: relative;
+}
+/*右边登录盒子*/
+/*####大盒子 开始###*/
+.head_login_box{
+    width: 286px;
+    height: 295px;
+    background-color: #06213d;
+    position: absolute;
+    right: 75px;
+    top: 130px;
+
+}
+/*####大盒子 结束###*/
+/*#### 大盒子内部第一个盒子 开始####*/
+.head_login_box1{
+    width: 220px;
+    height: 291px;
+    margin: 1px 30px;
+}
+.head_login_box1_title{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+.head_login_box1_user{
+    width: 220px;
+    height: 40px;
+    margin-top: 10px;
+}
+.head_login_box1_pass{
+    width: 220px;
+    height: 40px;
+    margin-top: 10px;
+}
+.head_login_box1_user_i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:url("../images/enterprise/head/user.png");
+}
+.head_login_box1_user input{
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    padding-left: 10px;
+}
+.head_login_box1_pass_i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:url("../images/enterprise/head/pass.png");
+}
+.head_login_box1_pass input{
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    padding-left: 10px;
+}
+.head_login_box1_for{
+    display: inline-block;
+    color:#fff;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.head_login_box1_for:hover{
+    text-decoration: underline;
+}
+.head_login_box1_btn{
+    width: 220px;
+    height: 35px;
+    background-color: #00aaee;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.head_login_box1_btn:hover{
+    background-color: #00a3d2;
+}
+.head_login_box1_foot{
+    width: 220px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.head_login_box1_foot a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+}
+.head_login_box1_foot a:hover{
+    text-decoration: underline;
+}
+.head_login_box1_foot2{
+    margin-left: 10px;
+}
+.head_login_box1_foot .head_login_box1_foot3{
+    color: #00a3d2;
+}
+/*#### 大盒子内部第一个盒子 结束####*/
+/*####右上角 二维码开始####*/
+.head_login_box .head_login_box2 a{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/enterprise/head/ma.png")-199px -199px;
+}
+.head_login_box3{
+    width: 187px;
+    height: 258px;
+    padding: 20px 40px;
+    display: none;
+}
+.head_login_box3_box{
+    width: 187px;
+    height: 245px;
+    background: url("../images/enterprise/head/deng.png");
+}
+.head_login_box3_box i{
+    display: block;
+    width: 187px;
+    height: 258px;
+    background: url("../images/enterprise/head/deng.png");
+}
+/*####右上角 二维码结束####*/
+/*####顶部栏  登陆栏 结束####*/
+/*####底部广告栏开始####*/
+.head_ad_box_i img {
+    display: inline-block;
+    width: 24px;
+    height: 22px;
+}
+.head_ad_box{
+    width: 1249px;
+    height: 36px;
+    line-height: 36px;
+    position: absolute;
+    bottom: 0;
+    padding-left:50px;
+}
+.head_ad_box_lis{
+    width: 1200px;
+}
+.head_ad_box_lis li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.head_ad_box_lis li {
+    margin-right: 80px;
+}
+.head_ad_box_lis li a:hover{
+    text-decoration: underline;
+    color: #108ee9;
+}
+.head_ad_box_lis .head_ad_box_lis_more{
+    margin-left: 190px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.head_ad_box_lis .head_ad_box_lis_more:hover{
+    text-decoration: underline;
+    color: #108ee9;
+}
+
+/*####底部广告栏结束####*/
+/*结束*/
+.head_bc_back{
+    width: 1349px;
+    height: 550px;
+}
+/*head的顶部*/
+.head_top{
+    width: 1349px;
+    height: 50px;
+    background-color: #082a5d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*移入字体变色*/
+.head_top a:hover{
+    color:#0c5f9f;
+}
+/*head顶部左边的蚂蚁金服*/
+.head_top_left_mayi{
+    float: left;
+    margin: 0;
+    padding-top: 2px;
+    margin-left: 50px;
+    margin-right: 18px;
+}
+.head_top_left_mayi a {
+    display: block;
+    font-size: 0;
+    height: 48px;
+}
+.mayi_logo{
+    width: 172px;
+    height: 48px;
+}
+
+
+/*head顶部的第二个盒子*/
+.head_top_left{
+
+}
+/*下拉向下的那个小图标*/
+.common_xiala1,.common_xiala2,.common_xiala3{
+    width: 11px;
+    height: 7px;
+}
+/*下拉那个显示小方框*/
+.head_top_left_xialaBox{
+    display: none;
+    position: absolute;
+    overflow: visible;
+    z-index: 111111;
+    min-width: 120px;
+    text-align: left;
+    left: 230px;
+    top: 50px;
+}
+.head_top_left_xialaBox1{
+    background: rgba(6,16,36,.9);
+    line-height: 40px;
+    /*padding: 0 10px;*/
+}
+.head_top_left_xialaBox a{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    font-family: 'microsoft yahei';
+}
+/*文档下面的下拉*/
+.head_top_left_wendangxiala {
+    position: absolute;
+    overflow: visible;
+    z-index: 111111;
+    min-width: 120px;
+    text-align: left;
+    left: 448px;
+    top: 50px;
+    font-family: 'microsoft yahei';
+}
+
+
+.head_top_left li div{
+    text-align: center;
+}
+.head_top_left li div a {
+    text-align: center;
+    padding:0 20px;
+}
+/*head顶部的第三个右边盒子*/
+.head_top_right{
+    float: right;
+    margin-right: 50px;
+}
+
+.head_top_right li div a{
+    text-align: center;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.head_top_right .head_top_twoli{
+    float:left;
+}
+.head_top_right .sou{
+    width: 14px;
+    height: 15px;
+}
+.head_top_right_one{
+    line-height: 50px;
+}
+.head_top_right_line{
+    margin: 17px 0;
+    color: #ffffff;
+}
+.head_top_right_lastone div{
+    width: 80px;
+    height: 28px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+/*帮助与下载下面的下拉盒子*/
+.head_top_right_bangzhuBox{
+    /*display: none;*/
+    position: absolute;
+    overflow: visible;
+    z-index: 111111;
+    min-width: 120px;
+    text-align: left;
+    left: 1028px;
+    top: 50px;
+    font-family: 'microsoft yahei';
+}
+/*下拉下面的热线*/
+.head_top_right_bangzhuBox_hotline{
+    line-height: 1.8;
+    background: rgba(6,16,36,.9);
+    padding: 0 20px 15px;
+    white-space: nowrap;
+    text-align: left;
+    border-top: none;
+}
+.head_top_right_bangzhuBox_hotline h3{
+    margin: 10px 0 4px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 0;
+    color: #8F8F8F;
+    font-family: tahoma, arial, "Hiragino Sans GB", "Microsoft Yahei", "\5b8b\4f53";
+}
+.head_top_right_bangzhuBox_hotline p {
+    font-size: 16px;
+    color: #8F8F8F;
+    line-height: 1.5;
+}
+/*head的标题banner栏的开始*/
+.head_banner{
+    width: 800px;
+    height: 182px;
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    margin-left: -600px;
+    text-align: left;
+    z-index: 3;
+}
+/*文字部分*/
+.head_banner_main{
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 40px;
+    webkit-font-smoothing: initial;
+}
+.head_banner_two{
+    font-size: 20px;
+    color: #fff;
+    line-height: 32px;
+}
+.head_banner_three{
+    font-size: 20px;
+    color: #fff;
+    line-height: 32px;
+}
+.head_banner_topA{
+    text-decoration: none;
+}
+
+

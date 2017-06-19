@@ -1,0 +1,99 @@
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,li,img,div,span,a,input{
+    padding: 0;
+    margin: 0;
+}
+.w {
+    width: 1240px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color:#049AE3;
+}
+li {
+    list-style: none;
+}
+img,input {
+    border: none;
+    vertical-align: middle;
+    outline: none;
+}
+body {
+    font-size: 12px;
+    font-family: "Microsoft YaHei", tahoma, arial, "Hiragino Sans GB";
+    background: #F9F9F9;
+}
+textarea {
+     outline:none; /*去掉环绕线*/
+     resize: none; /*禁用拖动*/
+   }
+/*清除浮动使用双伪元素进行清除*/
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+
+
+/*body {
+    background: #F6F6F6;
+    font: 12px Arial;
+    color:#A5A59D;
+}*/
+/*禁止手动修改大小*/
+/*textarea {*/
+/*resize: none;*/
+/*}*/
+/*/!*对表格重叠的边框线进行合并，不会那么粗*!/*/
+/*table {*/
+/*border-collapse: collapse;*/
+/*}*/
+
+/*.ar {*/
+  /*text-align: right;*/
+/*}*/
+/*.color-red {*/
+  /*color:red !important;*/
+/*}*/
+/*/!*清除浮动*!/*/
+/*/!*字体图标*!/*/
+
+/*@font-face {*/
+  /*font-family: 'myicon';*/
+  /*src: url('../icon/iconfont.eot');*/
+  /*src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'),*/
+  /*url('../icon/iconfont.woff') format('woff'),*/
+  /*url('../icon/iconfont.ttf') format('truetype'),*/
+  /*url('../icon/iconfont.svg#iconfont') format('svg');*/
+/*}*/
+
+/*.icon{*/
+  /*font-family:"myicon" !important;*/
+  /*font-size:16px;font-style:normal;*/
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-webkit-text-stroke-width: 0.2px;*/
+  /*-moz-osx-font-smoothing: grayscale;*/
+/*}*/

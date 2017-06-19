@@ -1,0 +1,639 @@
+@charset "UTF-8 ";
+/*#############为什么选择我们 模块开始##########*/
+/*####主体大盒子 开始####*/
+.why_content{
+    width: 1349px;
+    height: 808px;
+    position: relative;
+}
+/*####主体大盒子 结束####*/
+/*####顶部标题栏 开始####*/
+.why_title{
+    width: 1349px;
+    height: 139px;
+}
+.why_height{
+    width: 1349px;
+    height: 36px;
+}
+.why_txt{
+    width: 1349px;
+    height: 51px;
+    font-size: 32px;
+    text-align: center;
+}
+.why_line{
+    width: 60px;
+    height: 2px;
+    background-color: #108ee9;
+    margin: 0 auto;
+}
+/*####顶部标题栏 结束####*/
+/*######中心内容栏 开始#######*/
+/*####底部背景图 开始####*/
+.why_map{
+    width: 1349px;
+    height: 669px;
+    background: url("../images/enterprise/why/bgc.png")no-repeat top center;
+    padding: 70px 0px 0px 0px;
+    position: relative;
+}
+/*####底部背景图 结束####*/
+/*####选择列表开始####*/
+.why_lis{
+    width: 1240px;
+    height: 400px;
+    background-color: pink;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.why_list{
+    position: absolute;
+    width: 3000px;
+}
+/*####第一个小盒子 开始####*/
+/*默认底图*/
+.why_list .why_one{
+    width: 310px;
+    height: 400px;
+    background:url("../images/enterprise/why/one.png");
+    position: relative;
+    overflow: hidden;
+}
+/*鼠标未点击时盒子*/
+.why_one_old{
+    width: 310px;
+    height: 400px;
+}
+.why_one_old_i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -100px;
+}
+.why_one_old_i img{
+    width: 100px;
+}
+.why_one_old_t{
+    width: 310px;
+    height: 51px;
+    font-size:32px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+}
+.why_one_old_p{
+    width: 310px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    margin-left: -60px;
+    margin-top: -50px;
+}
+/*####鼠标悬停时的新盒子*/
+.why_one_new{
+    width: 310px;
+    height: 400px;
+    background-color: #347fee;
+    opacity: 0.8;
+    position: absolute;
+    left: -310px;
+    top: 0;
+}
+.why_one_new_t{
+    width: 310px;
+    height: 51px;
+    font-size:32px;
+    color: #fff;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+.why_one_new_line{
+    width: 60px;
+    height: 3px;
+    background-color: #fec116;
+    position: absolute;
+    top: 85px;
+    left: 35px;
+}
+.why_one_new_p{
+    width: 240px;
+    height: 175px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 105px;
+    left: 35px;
+}
+.why_one_new_i{
+    position: absolute;
+    bottom: 0;
+}
+.why_one_new_i img{
+    height: 142px;
+}
+/*####第一个小盒子 结束####*/
+/*####第二个小盒子 开始####*/
+/*默认底图*/
+.why_list .why_two{
+    width: 310px;
+    height: 400px;
+    background:url("../images/enterprise/why/two.png");
+    position: relative;
+    overflow: hidden;
+}
+/*鼠标未点击时盒子*/
+.why_two_old{
+    width: 310px;
+    height: 400px;
+}
+.why_two_old_i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -100px;
+}
+.why_two_old_i img{
+    width: 100px;
+    height: 100px;
+}
+.why_two_old_t{
+    width: 310px;
+    height: 51px;
+    font-size:32px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+}
+.why_two_old_p{
+    width: 310px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    margin-left: -60px;
+    margin-top: -50px;
+}
+/*####鼠标悬停时的新盒子*/
+.why_two_new{
+    width: 310px;
+    height: 400px;
+    background-color: #347fee;
+    opacity: 0.8;
+    position: absolute;
+    left: -310px;
+    top: 0;
+}
+.why_two_new_t{
+    width: 310px;
+    height: 51px;
+    font-size:32px;
+    color: #fff;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+.why_two_new_line{
+    width: 60px;
+    height: 3px;
+    background-color: #fec116;
+    position: absolute;
+    top: 85px;
+    left: 35px;
+}
+.why_two_new_p{
+    width: 240px;
+    height: 175px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 105px;
+    left: 35px;
+}
+.why_two_new_i{
+    position: absolute;
+    bottom: 0;
+}
+.why_two_new_i img{
+    /*width: 142px;*/
+    height: 142px;
+}
+/*####第二个小盒子 结束####*/
+/*####第三个小盒子 开始####*/
+/*默认底图*/
+.why_list .why_three{
+    width: 310px;
+    height: 400px;
+    background:url("../images/enterprise/why/three.png");
+    position: relative;
+    overflow: hidden;
+}
+/*鼠标未点击时盒子*/
+.why_three_old{
+    width: 310px;
+    height: 400px;
+}
+.why_three_old_i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -100px;
+}
+.why_three_old_i img{
+    width: 100px;
+}
+.why_three_old_t{
+    width: 310px;
+    height: 51px;
+    font-size:32px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+}
+.why_three_old_p{
+    width: 310px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    margin-left: -60px;
+    margin-top: -50px;
+}
+/*####鼠标悬停时的新盒子*/
+.why_three_new{
+    width: 310px;
+    height: 400px;
+    background-color: #347fee;
+    opacity: 0.8;
+    position: absolute;
+    left: -310px;
+    top: 0;
+}
+.why_three_new_t{
+    width: 310px;
+    height: 51px;
+    font-size:32px;
+    color: #fff;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    /*margin-left: -60px;*/
+}
+.why_three_new_line{
+    width: 60px;
+    height: 3px;
+    background-color: #fec116;
+    position: absolute;
+    top: 85px;
+    left: 35px;
+}
+.why_three_new_p{
+    width: 240px;
+    height: 175px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 105px;
+    left: 35px;
+}
+.why_three_new_i{
+    position: absolute;
+    bottom: 0;
+}
+.why_three_new_i img{
+    /*width: 142px;*/
+    height: 142px;
+}
+/*####第三个小盒子 结束####*/
+/*####第四个小盒子 开始####*/
+/*默认底图*/
+.why_list .why_four{
+    width: 310px;
+    height: 400px;
+    background:url("../images/enterprise/why/four.png");
+    position: relative;
+    overflow: hidden;
+}
+/*鼠标未点击时盒子*/
+.why_four_old{
+    width: 310px;
+    height: 400px;
+}
+.why_four_old_i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -100px;
+}
+.why_four_old_i img{
+    width: 100px;
+}
+.why_four_old_t{
+    width: 310px;
+    height: 51px;
+    font-size:32px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+}
+.why_four_old_p{
+    width: 310px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    margin-left: -60px;
+    margin-top: -50px;
+}
+/*####鼠标悬停时的新盒子*/
+.why_four_new{
+    width: 310px;
+    height: 400px;
+    background-color: #347fee;
+    opacity: 0.8;
+    position: absolute;
+    left: -310px;
+    top: 0;
+}
+.why_four_new_t{
+    width: 310px;
+    height: 51px;
+    font-size:32px;
+    color: #fff;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+.why_four_new_line{
+    width: 60px;
+    height: 3px;
+    background-color: #fec116;
+    position: absolute;
+    top: 85px;
+    left: 35px;
+}
+.why_four_new_p{
+    width: 240px;
+    height: 175px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 105px;
+    left: 35px;
+}
+.why_four_new_i{
+    position: absolute;
+    bottom: 0;
+}
+.why_four_new_i img{
+    /*width: 142px;*/
+    height: 142px;
+}
+/*####第四个小盒子 结束####*/
+
+/*####第五个小盒子 开始####*/
+/*默认底图*/
+.why_list .why_five{
+    width: 310px;
+    height: 400px;
+    background:url("../images/enterprise/why/five.png");
+    position: relative;
+    overflow: hidden;
+}
+/*鼠标未点击时盒子*/
+.why_five_old{
+    width: 310px;
+    height: 400px;
+}
+.why_five_old_i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -100px;
+}
+.why_five_old_i img{
+    width: 100px;
+}
+.why_five_old_t{
+    width: 310px;
+    height: 51px;
+    font-size:32px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+}
+.why_five_old_p{
+    width: 310px;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    margin-left: -60px;
+    margin-top: -50px;
+}
+/*####鼠标悬停时的新盒子*/
+.why_five_new{
+    width: 310px;
+    height: 400px;
+    background-color: #347fee;
+    opacity: 0.8;
+    position: absolute;
+    left: -310px;
+    top: 0;
+}
+.why_five_new_t{
+    width: 310px;
+    height: 51px;
+    font-size:32px;
+    color: #fff;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+.why_five_new_line{
+    width: 60px;
+    height: 3px;
+    background-color: #fec116;
+    position: absolute;
+    top: 85px;
+    left: 35px;
+}
+.why_five_new_p{
+    width: 240px;
+    height: 175px;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 105px;
+    left: 35px;
+}
+.why_five_new_i{
+    position: absolute;
+    bottom: 0;
+}
+.why_five_new_i img{
+    height: 142px;
+}
+/*####第五个小盒子 结束####*/
+
+/*####左右按钮 开始####*/
+.why_arr{
+    display: none;
+}
+.why_arr span {
+    width: 40px;
+    height: 45px;
+    line-height: 40px;
+    position: absolute;
+    top: 245px;
+    background-color: #000;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+}
+.why_arr .why_arr_l{
+    left: 10px;
+}
+.why_arr .why_arr_r{
+    right: 10px;
+}
+/*####左右按钮 结束####*/
+/*####选择列表结束####*/
+/*######中心内容栏 结束#######*/
+/*####底部栏 开始####*/
+/*####底部栏大盒子 开始####*/
+.why_foot{
+    width: 1240px;
+    height: 64px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+/*####底部栏大盒子  结束####*/
+
+/*####底部栏第一个盒子 开始####*/
+.why_foot_one{
+    width: 360px;
+    height: 64px;
+    margin-left: 50px;
+    line-height: 30px;
+}
+.why_foot_one_box{
+    height: 35px;
+}
+.why_foot_one_box_title{
+    font-size: 26px;
+    color: #e79700;
+}
+.why_foot_one_box_user{
+    color: #e79700;
+}
+.why_foot_one_tips{
+    font-size: 14px;
+}
+/*####底部栏第一个盒子 结束####*/
+/*####底部栏第二个盒子 开始####*/
+.why_foot_two{
+    width: 360px;
+    height: 64px;
+    margin-left: 50px;
+    line-height: 30px;
+}
+.why_foot_two_box{
+    height: 35px;
+}
+.why_foot_two_box_title{
+    font-size: 26px;
+    color: #e79700;
+}
+.why_foot_two_box_user{
+    color: #e79700;
+}
+.why_foot_two_tips{
+    font-size: 14px;
+}
+/*####底部栏第二个盒子 结束####*/
+/*####底部栏第三个盒子 开始####*/
+.why_foot_three{
+    width: 360px;
+    height: 64px;
+    margin-left: 50px;
+    line-height: 30px;
+}
+.why_foot_three_box{
+    height: 35px;
+}
+.why_foot_three_box_title{
+    font-size: 26px;
+    color: #e79700;
+}
+.why_foot_three_box_user{
+    color: #e79700;
+}
+.why_foot_three_tips{
+    font-size: 14px;
+}
+/*####底部栏第三个盒子 结束####*/
+
+/*####底部栏 结束####*/
+/* ####小蚂蚁开始#### */
+.xiaomayi{
+   width: 100px;
+    height: 125px;
+   position: fixed;
+   right: 0;
+   bottom: 0;
+}
+.xiaomayi_close{
+    display: block;
+    width: 17px;
+    height: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ac593f;
+    background-color: #eeeeee;
+    position: absolute;
+    top:0;
+    right: 0;
+    text-align: center;
+    line-height: 10px;
+    margin-right: 10px;
+}
+.xiaomayi a img{
+    width: 100px;
+    height: 116px;
+}
+/* ####小蚂蚁结束#### */
+/*#############为什么选择我们 模块结束##########*/

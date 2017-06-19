@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付宝 知托付!</title>
+    <!-- 字体图标-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" class="icon"/>
+    <link rel="stylesheet" type="text/css" href="css/person_iconfont.css">
+    <!-- 公共模块-->
+    <link rel="stylesheet" href="css/common.css"/>
+    <!-- 人物模块-->
+    <link rel="stylesheet" href="css/person.css"/>
+    <!-- 登录模块-->
+    <link rel="stylesheet" href="css/addLoginBox.css"/>
+
+    <script src="scripts/jquery-1.12.2.js"></script>
+    <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/person.js"></script>
+    <script src="scripts/addLoginBox.js"></script>
+</head>
+<body>
+<!-- 头部开始 -->
+<div class="head">
+    <!-- 顶部栏开始 -->
+    <div class="head_top">
+        <ul class="head_top_left fl">
+            <li><a href="#">个人</a></li>
+            <li><a href="shop.html">企业</a></li>
+            <li><a href="enterprise.html">合作伙伴</a></li>
+        </ul>
+        <ul class="head_top_right fr">
+            <li><a href="javascript:void(0);">支付宝APP</a></li>
+            <li>|</li>
+            <li class="pr" id="head_top_service">
+                <a href="javascript:void(0);">客户服务</a><i class="head_top_arrowDown"></i>
+                <ul class="head_top_downList po">
+                    <li><a href="javascript:void(0);">服务大厅</a></li>
+                    <li><a href="javascript:void(0);">自助服务</a></li>
+                    <li><a href="javascript:void(0);">提建议</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- 顶部栏结束 -->
+    <!-- 导航栏开始 -->
+    <div class="head_nav pr">
+        <h1 class="head_nav_logo fl">支付宝</h1>
+        <ul class="head_nav_list fr">
+            <li><a href="javascript:void(0);">首页</a></li>
+            <li class="head_nav_list_press">
+                <div class="head_nav_downlist po">
+                    <a href="javascript:void(0);"><i class="iconfont icon-close"></i></a>
+                    <ul>
+                        <li><a href="javascript:void(0);">余额宝</a></li>
+                        <li><a href="javascript:void(0);">招财宝</a></li>
+                        <li><a href="javascript:void(0);">存金宝</a></li>
+                        <li><a href="javascript:void(0);">淘理财</a></li>
+                        <li><a href="javascript:void(0);">蚂蚁达客</a></li>
+                    </ul>
+                    <div class="head_nav_bottom">财富中心</div>
+                </div>
+                <a href="javascript:void(0);">财富中心</a>
+            </li>
+            <li class="head_nav_list_press">
+                <div class="head_nav_downlist po">
+                    <a href="javascript:void(0);"><i class="iconfont icon-close"></i></a>
+                    <ul>
+                        <li><a href="javascript:void(0);">安全中心</a></li>
+                        <li><a href="javascript:void(0);">会员保障</a></li>
+                    </ul>
+                    <div class="head_nav_bottom">安全保障</div>
+                </div>
+                <a href="javascript:void(0);">安全保障</a>
+            </li>
+            <li class="head_nav_list_border">|</li>
+            <li class="head_nav_list_press">
+                <div class="head_nav_downlist po">
+                    <a href="javascript:void(0);"><i class="iconfont icon-close"></i></a>
+                    <ul>
+                        <li><a href="shop.html">支付宝商家</a></li>
+                        <li><a href="javascript:void(0);">口碑商家</a></li>
+                    </ul>
+                    <div class="head_nav_bottom">商家中心</div>
+                </div>
+                <a href="javascript:void(0);">商家中心</a>
+            </li>
+            <li><a href="enterprise.html">开放平台</a></li>
+        </ul>
+        <div class="head_nav_log po">
+            <button>登录</button>
+            <a href="login.html">注册</a>
+        </div>
+    </div>
+    <!-- 导航栏结束 -->
+</div>
+<!-- 头部结束 -->
+
+<!-- 小蓝点开始 -->
+<ul class="dots po">
+    <li class="dots_chosen"><a href="javascript:void(0);"></a></li>
+    <li><a href="javascript:void(0);"></a></li>
+    <li><a href="javascript:void(0);"></a></li>
+    <li><a href="javascript:void(0);"></a></li>
+    <li><a href="javascript:void(0);"></a></li>
+    <li><a href="javascript:void(0);"></a></li>
+    <li><a href="javascript:void(0);"></a></li>
+</ul>
+<!-- 小蓝点结束 -->
+
+<!-- 下一个按钮开始 -->
+<div class="nextBtn po">
+    <i class="icon icon-down"></i>
+</div>
+<!-- 下一个按钮结束 -->
+
+<!--登录背景遮罩层开始-->
+<div id="bg" class="login-bg">
+    <!-- 登录框开始-->
+    <div class="_box">
+        <a href="javascript:void(0);" id="_box_close" class="_box_close">x</a>
+
+        <div class="_box2" id="_box2">
+            <a href="javascript:void(0);" id="_box2_a"></a>
+        </div>
+        <div class="_box1" id="_box1">
+            <div class="_box1_title">登陆支付宝</div>
+            <div class="_box1_user">
+                <i class="_box1_user_i fl"></i>
+                <input class="fl" type="text" placeholder="邮箱/手机号/淘宝会员名"/>
+            </div>
+            <div class="_box1_pass">
+                <i class="_box1_pass_i fl"></i>
+                <input class="fl" type="password"/>
+            </div>
+            <a href="#" class="_box1_for fr">忘记登陆密码？</a>
+            <input type="button" value="登 陆" class="_box1_btn"/>
+
+            <div class="_box1_foot">
+                <a href="javascript:void(0);" class="_box1_foot1 fl">淘宝会员登陆</a>
+                <a href="javascript:void(0);" class="_box1_foot2 fl">账户激活</a>
+                <a href="login.html" class="_box1_foot3 fr">免费注册</a>
+            </div>
+        </div>
+        <div class="_box3">
+            <div class="_box3_box">
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <!-- 登录框结束-->
+</div>
+<!--登录背景遮罩层结束-->
+
+<!-- 场景模块1开始 -->
+<div class="view1 pr show">
+    <video src="videos/person_view1.mp4" class="view1_video po"></video>
+    <div class="view1_pic po"><img src="images/person/view1_cover.jpg" alt="遮盖图"/></div>
+    <div class="view1_mask po">
+        <div class="view1_mask_layMid po">
+            <div class="view1_mask_layMid_pic"><img src="images/person/view1_change.png" alt="改变，因我而来"/></div>
+            <button class="view1_mask_layMid_signup">登录</button>
+            <button class="view1_mask_layMid_login">立即注册</button>
+            <i class="icon icon-video po"></i>
+        </div>
+    </div>
+</div>
+<!-- 场景模块1结束 -->
+
+<!-- 场景模块2开始 -->
+<div class="view2 pr">
+    <img src="images/person/view2_bg.jpg" alt="场景2背景图" class="view2_bg po"/>
+    <img src="images/person/view2_cloudLeft.png" alt="左边的云" class="view2_cloudLeft po"/>
+    <img src="images/person/view2_cloudBottom.png" alt="下面的云" class="view2_cloudBottom po"/>
+    <img src="images/person/view2_cloudTop.png" alt="上面的云" class="view2_cloudTop po"/>
+    <img src="images/person/view2_cloudRight.png" alt="右边的云" class="view2_cloudRight po"/>
+    <img src="images/person/view2_words.png" alt="现在的我很好" class="view2_words po"/>
+    <img src="images/person/view2_people.png" alt="笑得很猥琐的人" class="view2_people po"/>
+
+    <div class="view_bottom po">
+        <ul>
+            <li class="clearfix">
+                <i class="icon icon-zhuanzhang fl"></i>
+
+                <div class="fl">
+                    <p class="up">转账付款</p>
+
+                    <p class="down">转到支付宝账户，瞬间到账 | 转到银行卡，2小时到账</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 场景模块2结束 -->
+
+<!-- 场景模块3开始 -->
+<div class="view3 pr">
+    <img src="images/person/view3_bg.jpg" alt="场景3背景图" class="view3_bg po"/>
+    <img src="images/person/view3_scan.png" alt="扫描仪" class="view3_scan po"/>
+    <img src="images/person/view3_phone.png" alt="手机" class="view3_phone po"/>
+    <img src="images/person/view3_words.png" alt="结个帐没那么好奇吧" class="view3_words po"/>
+
+    <div class="view_bottom po">
+        <ul>
+            <li class="view3_bottom_li clearfix">
+                <i class="icon icon-saoyisao fl"></i>
+
+                <div class="fl">
+                    <p class="up">扫描二维码或条款付款</p>
+
+                    <p class="down">自动识别不安全链接，安心付款</p>
+                </div>
+            </li>
+            <li class="view3_bottom_li clearfix">
+                <i class="icon icon-fukuanma fl"></i>
+
+                <div class="fl">
+                    <p class="up">出示付款码付款</p>
+
+                    <p class="down">付款码每次不同，保障付款安全</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <i class="icon icon-dangmianfu fl"></i>
+
+                <div class="fl">
+                    <p class="up">通过声波收付款</p>
+
+                    <p class="down">没有网络也能收款付款</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 场景模块3结束 -->
+
+<!-- 场景模块4开始 -->
+<div class="view4 pr">
+    <img src="images/person/view4_bg.jpg" alt="场景4背景图" class="view4_bg po"/>
+    <img src="images/person/view4_words.png" alt="我就要这种'范儿'" class="view4_words po"/>
+
+    <div class="view_bottom po">
+        <ul>
+            <li class="view4_bottom_li clearfix">
+                <i class="icon icon-guojiyunshu fl"></i>
+
+                <div class="fl">
+                    <p class="up">国际运输</p>
+
+                    <p class="down">如淘宝购物般简单，无需办理转运</p>
+                </div>
+            </li>
+            <li class="view4_bottom_li clearfix">
+                <i class="icon icon-pinpaizhengpin fl"></i>
+
+                <div class="fl">
+                    <p class="up">品牌正品</p>
+
+                    <p class="down">海外商家直发，100%正品保证</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <i class="icon icon-renminbifukuan fl"></i>
+
+                <div class="fl">
+                    <p class="up">人民币付款</p>
+
+                    <p class="down">无需外币兑换费，无需双币种信用卡</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 场景模块4结束 -->
+
+<!-- 场景模块5开始 -->
+<div class="view5 pr">
+    <img src="images/person/view5_bg.jpg" alt="场景5背景图" class="view5_bg po"/>
+    <img src="images/person/view5_words.png" alt="理财那么小件事" class="view5_words po"/>
+
+    <div class="view_bottom po">
+        <ul>
+            <li class="view5_bottom_li clearfix">
+                <i class="icon icon-zhuanduo fl"></i>
+
+                <div class="fl">
+                    <p class="up">赚的更多</p>
+
+                    <p class="down">定期稳定收益，让你赚更多</p>
+                </div>
+            </li>
+            <li class="view5_bottom_li clearfix">
+                <i class="icon icon-anquanbaozhang fl"></i>
+
+                <div class="fl">
+                    <p class="up">安全保障</p>
+
+                    <p class="down">权威金融机构负责风险管理</p>
+                </div>
+            </li>
+            <li class="view5_bottom_li clearfix">
+                <i class="icon icon-press fl"></i>
+
+                <div class="fl">
+                    <p class="up">买的方便</p>
+
+                    <p class="down">一键预约购买，自动匹配成交</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <i class="icon icon-bianxian fl"></i>
+
+                <div class="fl">
+                    <p class="up">灵活变现</p>
+
+                    <p class="down">产品到期前，急用钱时可提前变现</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 场景模块5结束 -->
+
+<!-- 场景模块6开始 -->
+<div class="view6 pr">
+    <img src="images/person/view6_bg.jpg" alt="场景6背景图" class="view6_bg po"/>
+    <img src="images/person/view6_words.png" alt="去医院我不排队" class="view6_words po"/>
+
+    <div class="view_bottom po">
+        <ul>
+            <li class="view5_bottom_li clearfix">
+                <i class="icon icon-guahao fl"></i>
+
+                <div class="fl">
+                    <p class="up">挂号</p>
+
+                    <p class="down">余号查询，足不出户就能挂号</p>
+                </div>
+            </li>
+            <li class="view5_bottom_li clearfix">
+                <i class="icon icon-zhinengdaozhen fl"></i>
+
+                <div class="fl">
+                    <p class="up">智能导诊</p>
+
+                    <p class="down">叫号与导航，按时到达科室不迷路</p>
+                </div>
+            </li>
+            <li class="view5_bottom_li clearfix">
+                <i class="icon icon-fuyiyaofei fl"></i>
+
+                <div class="fl">
+                    <p class="up">付医药费</p>
+
+                    <p class="down">手机支付，各类医药费边走边付</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <i class="icon icon-chakanbaogao fl"></i>
+
+                <div class="fl">
+                    <p class="up">查看报告</p>
+
+                    <p class="down">消息通知，随时查看就诊报告</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 场景模块6结束 -->
+
+<!-- 场景模块7开始 -->
+<div class="view7 pr">
+    <!-- 主体模块开始 -->
+    <div class="view7_body limit">
+        <div class="view7_body_up">
+            <ul>
+                <li>
+                    <div>
+                        <i class="icon icon-fukuanshijianrongyideshiqing"></i>
+                        付款，是件容易的事
+                    </div>
+                    <p>
+                        <a href="javascript:void(0);">付款方式</a>
+                        <span>|</span>
+                        <a href="javascript:void(0);">134家金融机构</a>
+                    </p>
+                </li>
+                <li>
+                    <div>
+                        <i class="icon icon-huiyuanbaozhanganxinfukuan"></i>
+                        会员保障，安心付款
+                    </div>
+                    <p>
+                        <a href="javascript:void(0);">安全升级</a>
+                        <span>|</span>
+                        <a href="javascript:void(0);">应急服务</a>
+                        <span>|</span>
+                        <a href="javascript:void(0);">理赔服务</a>
+                    </p>
+                </li>
+                <li>
+                    <div>
+                        <i class="icon icon-haiwaishangpinxianggoujiugou"></i>
+                        海外商品，想购就购
+                    </div>
+                    <p>
+                        <a href="javascript:void(0);">全球直购</a>
+                        <span>|</span>
+                        <a href="javascript:void(0);">海外直邮</a>
+                    </p>
+                </li>
+                <li>
+                    <div>
+                        <i class="icon icon-wanzhuanzhifubao"></i>
+                        玩转支付宝
+                    </div>
+                    <p>
+                        <a href="javascript:void(0);">如何购物</a>
+                        <span>|</span>
+                        <a href="javascript:void(0);">新手须知</a>
+                        <span>|</span>
+                        <a href="javascript:void(0);">我要开店</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="view7_body_down">
+            <div class="view7_body_down_block">
+                <p>
+                    <a href="javascript:void(0);">支付宝收费规则</a>
+                    <span class="black">|</span>
+                    <a href="javascript:void(0);">支付宝服务协议</a>
+                </p>
+
+                <p>
+                    <a href="javascript:void(0);">蚂蚁金服隐私权政策</a>
+                    <span class="black">|</span>
+                    <a href="javascript:void(0);">蚂蚁金服客户权益保障承诺书</a>
+                </p>
+
+                <p>
+                    <span class="black">公告</span>
+                    <a href="javascript:void(0);">变更支付宝服务协议的公告</a>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);">《关于防范和打击电信网络诈骗犯罪的通告》</a>
+                </p>
+            </div>
+            <div class="view7_body_down_block">
+                <p>
+                    <span>支付宝官方微博</span>
+                    <a href="javascript:void(0);">+关注</a>
+                </p>
+            </div>
+            <div class="view7_body_down_block">
+                <p><span>下载支付宝</span></p>
+                <img src="images/person/view6_erweima.jpg" alt="下载支付宝二维码"/>
+            </div>
+            <div class="view7_body_down_block last">
+                <p><h6>支付宝E公益</h6></p>
+                <p><span>帮助听力智障儿童，献爱心。</span></p>
+                <button>立即查看</button>
+            </div>
+        </div>
+    </div>
+    <!-- 主体模块结束 -->
+
+    <!-- 底部模块开始 -->
+    <div class="view7_bottom limit">
+        <p>
+            <a href="javascript:void(0);">诚征英才</a>
+            <span>|</span>
+            <a href="javascript:void(0);">联系我们</a>
+            <span>|</span>
+            <a href="javascript:void(0);">Internationnal Business</a>
+            <span>ICP证:沪B2-20150087</span>
+        </p>
+
+        <p>
+            <a href="javascript:void(0);">蚂蚁金服集团</a>
+            <span>|</span>
+            <a href="javascript:void(0);">支付宝</a>
+            <span>|</span>
+            <a href="javascript:void(0);">余额宝</a>
+            <span>|</span>
+            <a href="javascript:void(0);">招财宝</a>
+            <span>|</span>
+            <a href="javascript:void(0);">芝麻信用</a>
+            <span>|</span>
+            <a href="javascript:void(0);">蚂蚁微贷</a>
+            <span>|</span>
+            <a href="javascript:void(0);">网商银行</a>
+            <span>|</span>
+            <a href="javascript:void(0);">蚂蚁达客</a>
+        </p>
+
+        <p>
+            <a href="javascript:void(0);">阿里巴巴集团</a>
+            <span>|</span>
+            <a href="javascript:void(0);">淘宝网</a>
+            <span>|</span>
+            <a href="javascript:void(0);">天猫</a>
+            <span>|</span>
+            <a href="javascript:void(0);">聚划算</a>
+            <span>|</span>
+            <a href="javascript:void(0);">全球速卖通</a>
+            <span>|</span>
+            <a href="javascript:void(0);">阿里巴巴国际交易市场</a>
+            <span>|</span>
+            <a href="javascript:void(0);">1688</a>
+            <span>|</span>
+            <a href="javascript:void(0);">阿里妈妈</a>
+            <span>|</span>
+            <a href="javascript:void(0);">阿里旅行-去啊</a>
+            <span>|</span>
+            <a href="javascript:void(0);">阿里云计算</a>
+            <span>|</span>
+            <a href="javascript:void(0);">YunOs</a>
+            <span>|</span>
+            <a href="javascript:void(0);">阿里通信</a>
+            <span>|</span>
+            <a href="javascript:void(0);">万网</a>
+            <span>|</span>
+            <a href="javascript:void(0);">高德</a>
+            <span>|</span>
+            <a href="javascript:void(0);">优视</a>
+            <span>|</span>
+            <a href="javascript:void(0);">友盟</a>
+            <span>|</span>
+            <a href="javascript:void(0);">虾米</a>
+            <span>|</span>
+            <a href="javascript:void(0);">天天动听</a>
+            <span>|</span>
+            <a href="javascript:void(0);">来往</a>
+            <span>|</span>
+            <a href="javascript:void(0);">钉钉</a>
+        </p>
+
+        <div class="view7_bottom_sign">
+            <a href="javascript:void(0);" class="view7_bottom_sign1 fl"></a>
+            <a href="javascript:void(0);" class="view7_bottom_sign2 fl"></a>
+            <a href="javascript:void(0);" class="view7_bottom_sign3 fl"></a>
+            <a href="javascript:void(0);" class="view7_bottom_sign4 fl"></a>
+            <a href="javascript:void(0);" class="view7_bottom_sign5 fl"></a>
+        </div>
+    </div>
+    <!-- 底部模块结束 -->
+</div>
+<!-- 场景模块7结束 -->
+</body>
+</html>

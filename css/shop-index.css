@@ -1,0 +1,411 @@
+@charset "UTF-8";
+/*header 样式开始*/
+.header {
+    height: 30px;
+    background-color: #3A3A3A;
+
+}
+.header-L a{
+    line-height: 30px;
+    color: #859F85;
+    margin-right: 17px;
+}
+.header-R li{
+    float: left;
+    line-height: 30px;
+
+}
+.header-R li a {
+    display: inline-block;
+    width: 66px;
+    text-align: center;
+    color: #859F85;
+}
+
+.header-R .h-One a{
+    float: left;
+    width: 39px;
+    text-align: center;
+}
+.header-R i {
+    float: right;
+    width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    background: #fff;
+}
+.header a:hover {
+    color: #ffffff;
+}
+/*header 样式结束*/
+/*顶部导航区域样式开始*/
+.nav {
+    height: 80px;
+    line-height: 80px;
+}
+.nav .logoLink {
+    float: left;
+    height: 80px;
+    width:300px;
+}
+.nav .nav-List li {
+    float: left;
+}
+
+.nav-List li a {
+    float: left;
+    height: 80px;
+    color: #444;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 32px;
+}
+.down-Border {
+    border-bottom: 2px solid #19ACF7;
+}
+.nav-List li a:hover {
+    color: #43bbf8;
+}
+/*顶部导航区域样式结束*/
+/*广告区域代码开始*/
+.banner {
+    position: relative;
+}
+.ad {
+    overflow: hidden;
+    height: 360px;
+    width: 100%;
+    position: relative;
+    /*background-color: pink;*/
+}
+
+.ad-List ul {
+    height: 360px;
+    width: 1000%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 360px;
+}
+.banner .ad-List li{
+    /*height: 360px;*/
+    float: left;
+}
+.banner .ad-List .ad-One{
+    display:inline-block;
+    background: url("../images/shop/1.png") no-repeat -168px 0;
+    height: 360px;
+}
+
+.banner .ad-List .ad-Two{
+    display:inline-block;
+    background: url("../images/shop/2.jpeg") no-repeat -168px 0;
+    height: 360px;
+    /*width: 100%;*/
+}
+.banner .ad-List .ad-Three{
+    display:inline-block;
+    background: url("../images/shop/3.png") no-repeat -168px 0;
+    height: 360px;
+    /*width: 100%;*/
+}
+.banner .ad-List .ad-Four{
+    display:inline-block;
+    background: url("../images/shop/4.jpeg") no-repeat -168px 0;
+    height: 360px;
+    /*width: 100%;*/
+}
+.banner .ad-List .ad-Five{
+    display:inline-block;
+    background: url("../images/shop/5.jpeg") no-repeat -168px 0;
+    height: 360px;
+    /*width: 100%;*/
+}
+/*-------------加入的登录框代码开始------------------*/
+
+/*####大盒子 开始###*/
+
+._box{
+    width: 286px;
+    height: 295px;
+    background-color: #06213d;
+    position: absolute;
+    right: 74px;
+    top: 32px;
+    z-index: 1000;
+}
+/* ####左上角关闭按钮 开始#### */
+._box_close{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    color: #9a9b9b;
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+._box_close:hover{
+    color: #fff;
+}
+/*####大盒子 结束###*/
+/*#### 大盒子内部第一个盒子 开始####*/
+._box1{
+    width: 220px;
+    height: 291px;
+    margin: 1px 30px;
+}
+._box1_title{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+._box1_user{
+    width: 220px;
+    height: 40px;
+    margin-top: 20px;
+}
+._box1_pass{
+    width: 220px;
+    height: 40px;
+    margin-top: 10px;
+}
+._box1_user_i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:url("../images/shop/head/user.png");
+}
+._box1_user input{
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    padding-left: 10px;
+}
+._box1_pass_i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background:url("../images/shop/head/pass.png");
+}
+._box1_pass input{
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    padding-left: 10px;
+}
+._box1_for{
+    display: inline-block;
+    color:#fff;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+._box1_for:hover{
+    text-decoration: underline;
+    color:white;
+}
+._box1_btn{
+    width: 220px;
+    height: 35px;
+    background-color: #00aaee;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+._box1_btn:hover{
+    background-color: #00a3d2;
+}
+._box1_foot{
+    width: 220px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+._box1_foot a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+}
+._box1_foot a:hover{
+    text-decoration: underline;
+}
+._box1_foot2{
+    margin-left: 10px;
+}
+._box1_foot ._box1_foot3{
+    color: #00a3d2;
+}
+/*#### 大盒子内部第一个盒子 结束####*/
+/*####右上角 二维码开始####*/
+._box ._box2 a{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/shop/head/ma.png")-201px -199px;
+}
+._box3{
+    width: 187px;
+    height: 258px;
+    padding: 20px 40px;
+    display: none;
+}
+._box3_box{
+    width: 187px;
+    height: 250px;
+    background: url("../images/shop/head/deng.png");
+}
+._box3_box i{
+    display: block;
+    width: 187px;
+    height: 250px;
+    background: url("../images/shop/head/deng.png");
+}
+/*-------------加入的登录框代码结束------------------*/
+
+
+/*广告区域代码结束*/
+/*公告区域代码开始*/
+.notice {
+    height: 84px;
+}
+.notice-Tip {
+    margin-top: 19px;
+    width: 72px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+    background: #FA991B;
+}
+.notice-Item {
+    margin-top: 24px;
+    margin-left: 28px;
+    width: 1100px;
+    /*font-size: 14px;*/
+}
+.notice-Item li {
+    float: left;
+    margin-right: 30px;
+}
+.notice-Item li a{
+    float: left;
+    width: 218px;
+    color: #1A1A1A;
+}
+.notice-Item span,.notice-Item .item-Last a{
+    color: #9A9A9A;
+}
+.notice-Item img {
+    vertical-align: top;
+}
+.notice-Item .item-Last {
+    float: right;
+    margin-right: 0;
+    text-align: right;
+}
+/*公告区域代码结束*/
+/*服务代码开始*/
+.serverList {
+    height: 320px;
+}
+
+.ser-Item {
+    width: 226px;
+    height: 208px;
+    padding: 50px 21px;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 23px;
+}
+#ser-Item {
+    /*position: absolute;*/
+}
+.ser-border {
+    border: 1px solid #dedddd;
+}
+.ser-Item h3 {
+    font-size: 20px;
+    color: #793E3E;
+    line-height: 48px;
+}
+.ser-Item p {
+    color: #9A9A9A;
+    line-height: 20px;
+}
+.ser-Link {
+    display: none;
+    height: 40px;
+    width: 226px;
+    background-color:#19acf7;
+    margin-top: 18px;
+    line-height: 40px;
+    color:white;
+    font-size: 14px;
+    border-radius:6px;
+}
+.ser-ItemLast {
+    /*margin-right:0px;*/
+}
+.ser-Last{
+    margin-top: 8px;
+}
+/*服务代码结束*/
+/*底部二维码代码开始*/
+.erweima {
+    height: 360px;
+    text-align: center;
+    line-height: 360px;
+    /*border-bottom: 1px solid #DDDDDD;*/
+}
+/*底不二维码代码结束*/
+/*部友情链接代码开始*/
+.friendLink {
+    border-top: 1px solid #DDDDDD;
+    margin-top: 20px;
+    padding-top: 19px;
+    color: #D3C1B7;
+}
+.friendLink p{
+    text-align: center;
+    line-height: 28px;
+    color: #D3C1B7;
+}
+.friendLink p a{
+    margin: 0 16px;
+    color: #D3C1B7;
+
+}
+.friendLink p a:hover {
+    text-decoration: underline;
+}
+.friendLink .friendLink-Foot {
+    color: #EEEFEF;
+}
+/*部友情链接代码结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

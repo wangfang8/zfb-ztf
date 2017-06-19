@@ -1,0 +1,757 @@
+@charset "UTF-8";
+/* 本页通用设置 */
+html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.icon{
+    font-family: 'iconfont';
+}
+
+/* 头部样式 */
+.head{
+    width: 100%;
+    min-width: 1120px;
+    position: fixed;
+    font-size: 12px;
+    z-index: 999;
+}
+
+/* 顶部栏样式 */
+.head_top{
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    background-color: #1e1b29;
+}
+
+.head_top>ul>li>a{
+    color: #ffffff;
+}
+
+.head_top a:hover{
+    color: #00bbee;
+}
+
+/* 顶部栏左侧样式 */
+.head_top_left{
+    margin-left: 7%;
+}
+
+.head_top_left>li{
+    float: left;
+    margin-right: 25px;
+}
+
+.head_top_left>li:first-child>a{
+    color: #00bbee;
+}
+
+/* 顶部栏右侧样式 */
+.head_top_right{
+    margin-right: 7%;
+}
+
+.head_top_right li{
+    color: #ffffff;
+}
+
+.head_top_right>li{
+    float: left;
+    margin-left: 10px;
+}
+
+/* 登录注册区块样式 */
+.head_nav_log{
+    display: none;
+    right: 8%;
+    top: 0;
+    line-height: 80px;
+}
+
+.head_nav_log button{
+    width: 84px;
+    height: 28px;
+    background-color: #00bbee;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.head_nav_log a{
+    font-size: 14px;
+    color: #00bbee;
+}
+
+/* 小三角形的样式 */
+.head_top_arrowDown{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 5px 5px 0 5px;
+    border-color: #eeeeee transparent transparent transparent;
+    border-style: solid;
+    margin-left: 5px;
+}
+
+/* 下拉列表 */
+.head_top_downList{
+    display: none;
+    width: 82px;
+    height: 95px;
+    text-align: center;
+    left: -10px;
+    top: 28px;
+    border: 1px #f1f1f1 solid;
+    border-width: 0 1px 1px 1px;
+    padding: 5px 0;
+    background-color: #ffffff;
+    z-index: 999;
+}
+
+.head_top_downList a{
+    color: #333333;
+}
+
+/* 导航栏样式 */
+.head_nav{
+    height: 80px;
+    background-color: rgba(255,255,255,0.9);
+    border-bottom: 1px #eeeeee solid;
+    padding: 0 7%;
+}
+
+.head_nav_logo{
+    width: 114px;
+    height: 40px;
+    background: url('../images/person/head_alipaylogo.png') no-repeat;
+    margin-top: 20px;
+    text-indent: -9999em;
+}
+
+.head_nav_list{
+    line-height: 80px;
+    font-size: 16px;
+    color: #333;
+    margin-right: 230px;
+}
+
+.head_nav_list>li{
+    float: left;
+    color: #333;
+    position: relative;
+}
+
+.head_nav_list>li>a{
+    display: block;
+    padding: 0 30px;
+    color: #333;
+}
+
+.head_nav_list>li:first-child>a{
+    color: #00bbee;
+}
+
+.head_nav_list>li>a:hover{
+    color: #00bbee;
+}
+
+.head_nav_list_border{
+    padding: 0;
+    padding-left: 20px;
+}
+
+/* 导航下拉列表样式 */
+.head_nav_downlist{
+    display: none;
+    width: 124px;
+    padding: 0 5px;
+    left: -6px;
+    top: 0;
+    border: 1px solid #999;
+    border-top: none;
+    background-color: #fff;
+}
+
+.head_nav_downlist ul{
+    padding-bottom: 20px;
+}
+
+.head_nav_downlist li{
+    display: block;
+    width: 100%;
+    height: 28px;
+    text-align: center;
+}
+
+.head_nav_downlist li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 28px;
+    color: #333;
+    font-size: 14px;
+}
+
+.head_nav_downlist li a:hover{
+    color: #ffffff;
+    background-color: #00bbee;
+}
+
+.icon-close{
+    display: block;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: #999;
+    font-size: 36px;
+}
+
+.head_nav_bottom{
+    width: 100%;
+    height: 81px;
+    line-height: 81px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+}
+
+/* 小蓝点样式 */
+.dots{
+    right: 2%;
+    top: 50%;
+    z-index: 500;
+    margin-top: -102px;
+}
+
+.dots li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px #ccc solid;
+    margin: 15px 0;
+}
+
+.dots li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.dots_chosen{
+    border-color: #0cf;
+    background-color: #0cf;
+}
+
+/* 下一个按钮样式 */
+.nextBtn{
+    /*display: none;*/
+    left: 50%;
+    bottom: 10%;
+    margin-left: -18px;
+    z-index: 500;
+    cursor: pointer;
+}
+
+.icon-down{
+    display: block;
+    color: #fff;
+    font-size: 36px;
+}
+
+/* 场景模块1样式 */
+.view1{
+    /*display: none;*/
+    width: 100%;
+    height : 100%;
+}
+
+.view1 video{
+    display: none;
+    width: 100%;
+}
+
+.view1 img{
+    display: block;
+    width: 100%;
+}
+
+.view1_pic{
+    width: 100%;
+    height: 100%;
+}
+
+.view1_pic img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 遮盖层样式 */
+.view1_mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.35);
+    z-index: 50;
+}
+
+.view1_mask_layMid{
+    width: 420px;
+    height: 200px;
+    left: 50%;
+    top: 45%;
+    margin-left: -210px;
+}
+
+.view1_mask_layMid_pic{
+    margin-bottom: 10px;
+}
+
+.view1_mask_layMid img{
+    width: 100%;
+}
+
+.view1_mask_layMid button{
+    width: 188px;
+    height: 32px;
+    margin-left: 16px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.view1_mask_layMid_signup{
+    background-color: #00bbee;
+    border-color: #00bbee !important;
+}
+
+.view1_mask_layMid_login{
+    background-color: transparent;
+}
+
+/* 播放影片按钮样式 */
+.icon-video{
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 34px;
+    right: -40px;
+    top: 35px;
+    cursor: pointer;
+}
+
+/* 场景模块2样式 */
+.view2{
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.view2_bg{
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    top: -5%;
+}
+
+.view2_cloudLeft{
+    top: 21%;
+    left: 11%;
+}
+
+.view2_cloudBottom{
+    width: 120px;
+    height: 50px;
+    top: 54%;
+    left: 33%;
+}
+
+.view2_cloudTop{
+    top: -11%;
+    left: 69%;
+}
+.view2_cloudRight{
+    top: 9%;
+    left: 41%;
+}
+
+.view2_words{
+    opacity: 0;
+    width: 315px;
+    height: 165px;
+    left: 28%;
+    top: 30%;
+}
+
+.view2_people{
+    left: 47%;
+    top: -1%;
+}
+
+/* 场景模块2底部栏样式 */
+.view_bottom ul{
+    margin-left: 9%;
+}
+
+/* 场景模块3样式 */
+.view3{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.view3_bg{
+    width: 100%;
+    height: 100%;
+}
+
+.view3_scan{
+    width: 440px;
+    height: 389px;
+    top: -40%;
+    left: -40%;
+}
+
+.view3_phone{
+    width: 1340px;
+    height: 514px;
+    top: 100%;
+    left: 100%;
+}
+
+.view3_words{
+    display: none;
+    width: 340px;
+    height: 157px;
+    top: 37%;
+    left: 50%;
+}
+
+/* 场景模块3底部栏样式 */
+.view3_bottom_li{
+    margin-right: 15%;
+}
+
+/* 场景模块4样式*/
+.view4{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.view4_bg{
+    width: 100%;
+    height: 100%;
+}
+
+.view4_words{
+    display: none;
+    width: 355px;
+    height: 166px;
+    left: 19%;
+    top: 30%;
+}
+/* 场景模块4底部栏样式 */
+.view4_bottom_li{
+    margin-right: 15%;
+}
+
+/* 场景模块5样式 */
+.view5{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+.view5_bg{
+    width: 100%;
+    height: 100%;
+}
+
+.view5_words{
+    display: none;
+    width: 300px;
+    height: 184px;
+    left: 56%;
+    top: 30%;
+}
+
+/* 场景模块5底部栏样式 */
+.view5_bottom_li{
+    margin-right: 7%;
+}
+
+/* 场景模块6样式 */
+.view6{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.view6_bg{
+    width: 108%;
+    height: 108%;
+    top: -4%;
+    left: -4%;
+}
+
+.view6_words{
+    display: none;
+    width: 300px;
+    height: 174px;
+    left: 12%;
+    top: 30%;
+}
+
+/* 场景模块6底部栏样式 */
+.view6_bottom_li{
+    margin-right: 6%;
+}
+
+/* 所有场景底部栏的样式 */
+.view_bottom{
+    width: 100%;
+    height: 48px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    padding-top: 12px;
+}
+
+.view_bottom li{
+    float: left;
+}
+
+.view_bottom .icon{
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.view_bottom div{
+    padding-left: 10px;
+    border-left: 1px solid #fff;
+}
+
+.view_bottom .up{
+    font-size: 16px;
+}
+
+.view_bottom .down{
+    font-size: 12px;
+}
+
+/* 场景模块7样式 */
+.view7{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.limit{
+    padding: 0 6%;
+}
+/* 场景模块7主体样式 */
+.view7_body{
+    width: 88%;
+    min-width: 1120px;
+    height: 70%;
+    min-height: 400px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+/* 主体模块上部样式 */
+.view7_body_up{
+    width: 100%;
+    height: 30%;
+    margin-top: 109px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.view7_body_up li{
+    width: 25%;
+    float: left;
+    margin-top: 3%;
+}
+
+.view7_body_up div{
+    font-size: 14px !important;
+}
+
+.view7_body_up div i{
+    vertical-align: -5px;
+}
+
+.view7_body_up div{
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.view7_body_up p a, .view7_body_up p span{
+    color: #999;
+    font-size: 14px;
+}
+
+.view7_body_up p a:hover{
+    text-decoration: underline;
+}
+
+.icon-fukuanshijianrongyideshiqing{
+    color: #ffb400;
+    font-size: 36px;
+}
+
+.icon-huiyuanbaozhanganxinfukuan{
+    color: #47a8ef;
+    font-size: 36px;
+}
+
+.icon-haiwaishangpinxianggoujiugou{
+    color: #ff6600;
+    font-size: 36px;
+}
+
+.icon-wanzhuanzhifubao{
+    color: #47a8ef;
+    font-size: 36px;
+}
+
+/* 主体模块下部样式 */
+.view7_body_down{
+    width: 100%;
+}
+
+.view7_body_down_block{
+    width: 25%;
+    float: left;
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.view7_body_down_block img{
+    width: 80px;
+}
+
+.view7_body_down_block p>a, .view7_body_down_block p>span{
+    font-size: 12px;
+    color: #999;
+    line-height: 2;
+}
+
+.black{
+    color: #666 !important;
+    font-size: 14px !important;
+}
+
+.view7_body_down_block.last{
+    height: 105px;
+    background: url("../images/person/view7_love.jpg") no-repeat right bottom;
+}
+
+.view7_body_down_block.last h6{
+    font-weight: 700;
+}
+
+.view7_body_down_block.last p{
+    line-height: 2;
+}
+
+.view7_body_down_block.last button{
+    display: block;
+    line-height: 1.5;
+    padding: 2px 15px;
+    background: #959595;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 场景模块7底部样式 */
+.view7_bottom{
+    width: 100%;
+    height: 30%;
+    background-color: #1e1b29;
+    left: 0;
+    bottom: 0;
+    padding-top: 25px;
+}
+
+.view7_bottom>p>span, .view7_bottom>p>a{
+    font-size: 12px;
+    color: #999;
+}
+
+.view7_bottom_sign>a{
+    display: block;
+    height: 38px;
+    background: url("../images/person/view7_sprite.png") no-repeat 0 0;
+    margin-right: 20px;
+}
+
+.view7_bottom_sign .view7_bottom_sign1{
+    width: 32px;
+    background-position: -4px -20px;
+}
+
+.view7_bottom_sign .view7_bottom_sign1:hover{
+    background-position: -3px -65px;
+}
+
+.view7_bottom_sign .view7_bottom_sign2{
+    width: 70px;
+    background-position: -64px -15px;
+}
+
+.view7_bottom_sign .view7_bottom_sign2:hover{
+    background-position: -63px -60px;
+}
+
+.view7_bottom_sign .view7_bottom_sign3{
+    width: 65px;
+    background-position: -140px -15px;
+}
+
+.view7_bottom_sign .view7_bottom_sign3:hover{
+    background-position: -139px -60px;
+}
+
+.view7_bottom_sign .view7_bottom_sign4{
+    width: 30px;
+    background-position: -225px -15px;
+}
+
+.view7_bottom_sign .view7_bottom_sign4:hover{
+    background-position: -223px -60px;
+}
+
+.view7_bottom_sign .view7_bottom_sign5{
+    width: 30px;
+    background-position: -390px -15px;
+}
+
+.view7_bottom_sign .view7_bottom_sign5:hover{
+    background-position: -390px -55px;
+}

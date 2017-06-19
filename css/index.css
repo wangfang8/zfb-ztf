@@ -1,0 +1,219 @@
+@charset "utf-8";
+/*头部LOGO区域***********************************************/
+body {
+    overflow: hidden;
+}
+
+#img > img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/*LOGO区域*/
+#logo {
+    width: 1090px;
+    height: 24px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: -545px;
+    z-index: 10;
+}
+
+#logo #logo_r {
+    float: right;
+    margin-top: 6px;
+}
+
+#logo_r span {
+    color: #A4A78F;
+    margin-right: 10px;
+}
+
+#logo_r a {
+    color: white;
+}
+
+#logo_r a:hover {
+    color: skyblue;
+}
+
+#logo #logo_l {
+    float: left;
+    margin-bottom: 0;
+}
+
+#logo_l img {
+    height: 24px;
+}
+
+/*******************************************************/
+/*中间区域*/
+
+
+.container {
+    width: 615px;
+    height: 270px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -341px;
+}
+.container .pic img{
+    width: 100%;
+    height: 182px;
+}
+.container .pic {
+    height: 220px;
+}
+.container .back_link a.r {
+    margin-left: 30px;
+}
+.container .back_link a {
+    width: 170px;
+    height: 50px;
+    display: inline-block;
+    background: #069BE5;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    margin-right:20px;
+    overflow: hidden;
+}
+.container a.r:hover,.container a.l:hover {
+    background: #00AAEE;
+}
+.container .back_link i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/neqhNGwxBXBmhVY.png");
+    margin: 0 15px 0 20px;
+    background-size: 24px;
+    vertical-align: middle;
+}
+.container .back_link b {
+    display: inline-block;
+    width: 0px;
+    height: 50px;
+    vertical-align: middle;
+}
+.container .back_link span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.back_link .father {
+    width: 172px;
+    height: 100px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -84px;
+}
+.father .fat_t {
+    width: 172px;
+    height: 50px;
+}
+.container .father .fat_t a {
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    line-height: 50px;
+    text-align: center;
+    display: none;
+}
+.container .father .fat_b {
+    width: 172px;
+    height: 50px;
+}
+.father .fat_b a {
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: absolute;
+    top: 0;
+    line-height: 50px;
+    text-align: center;
+    /*border-top: 1px solid white;*/
+    display: none;
+}
+
+
+/*底部区域**********************************************************/
+.foot {
+    height: 70px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.foot_t {
+    height: 22px;
+    width: 100%;
+    text-align: center;
+    /*margin: 0 auto;*/
+    margin-top: 5px;
+    overflow: hidden;
+}
+.foot_t ul {
+    margin-left: 300px;
+}
+.foot_t li {
+    float: left;
+    margin: 0 4px;
+}
+.foot_c {
+    height: 20px;
+}
+.foot_b {
+    height: 23px;
+    text-align: center;
+}
+.foot_b a {
+    display: inline-block;
+    height: 100%;
+}
+.foot_b .a1 {
+    width: 20px;
+    background:url("../images/footIco.png") no-repeat 0 -10px ;
+}
+.foot_b .a1:hover {
+    width: 20px;
+    background:url("../images/footIco.png") no-repeat 0px -33px ;
+}
+.foot_b .a2 {
+    width: 40px;
+    background:url("../images/footIco.png") no-repeat -33px -10px;
+}
+.foot_b .a2:hover {
+    width: 40px;
+    background:url("../images/footIco.png") no-repeat -32px -33px;
+}
+.foot_b .a3 {
+    width: 35px;
+    background:url("../images/footIco.png") no-repeat -77px -10px;
+}
+.foot_b .a3:hover {
+    width: 35px;
+    background:url("../images/footIco.png") no-repeat -76px -33px;
+}
+.foot_b .a4 {
+    width: 18px;
+    background:url("../images/footIco.png") no-repeat -116px -10px;
+}
+.foot_b .a4:hover {
+    width: 18px;
+    background:url("../images/footIco.png") no-repeat -115px -33px;
+}
+.foot_b .a5 {
+    width: 20px;
+    background:url("../images/footIco.png") no-repeat -200px -10px;
+}
+.foot_b .a5:hover {
+    width: 20px;
+    background:url("../images/footIco.png") no-repeat -199px -30px;
+}
